@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foodie Express - Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head><link rel="stylesheet" href="style.css" />
+
+
+<body class="bg-white text-gray-800">
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between p-4 bg-red-500 text-white">
+    <h1 class="text-2xl font-bold">FoodieExpress</h1>
+    <ul class="hidden md:flex space-x-6">
+      <li><a href="index.html" class="hover:underline">Home</a></li>
+      <li><a href="restaurants.html" class="hover:underline">Restaurants</a></li>
+      <li><a href="cart.html" class="hover:underline">Cart</a></li>
+      <li><a href="track.html" class="hover:underline">Track Order</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col items-center justify-center text-center p-10 bg-yellow-100">
+    <h2 class="text-4xl font-bold mb-4">Delicious food delivered to your doorstep</h2>
+    <p class="mb-6 text-lg">Order from your favorite restaurants in just a few clicks!</p>
+    <a href="restaurants.html" class="bg-red-500 text-white px-6 py-3 rounded-full hover:bg-red-600 transition">Order Now</a>
+  </section>
+
+  <!-- Featured Restaurants -->
+  <section class="p-6">
+    <h3 class="text-2xl font-semibold mb-4">Popular Restaurants</h3>
+    <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+      <div class="border rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+        <img src="https://source.unsplash.com/400x200/?pizza" alt="Pizza" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h4 class="font-semibold">Pizza Palace</h4>
+          <p class="text-sm text-gray-600">Fast & Hot Pizzas</p>
+        </div>
+      </div>
+      <div class="border rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+        <img src="https://source.unsplash.com/400x200/?burger" alt="Burger" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h4 class="font-semibold">Burger Hub</h4>
+          <p class="text-sm text-gray-600">Juicy Grilled Burgers</p>
+        </div>
+      </div>
+      <div class="border rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+        <img src="https://source.unsplash.com/400x200/?biryani" alt="Biryani" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h4 class="font-semibold">Biryani Express</h4>
+          <p class="text-sm text-gray-600">Spicy & Flavorful</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center p-4 mt-10">
+    &copy; 2025 FoodieExpress. All rights reserved.
+  </footer>
+
+  <!-- JavaScript link -->
+  <script src="script.js"></script>
+</body>
+</html>

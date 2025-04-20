@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurants - FoodieExpress</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head><link rel="stylesheet" href="style.css" />
+
+<body class="bg-gray-100 text-gray-800">
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between p-4 bg-red-500 text-white">
+    <h1 class="text-2xl font-bold">FoodieExpress</h1>
+    <ul class="hidden md:flex space-x-6">
+      <li><a href="index.html" class="hover:underline">Home</a></li>
+      <li><a href="restaurants.html" class="hover:underline">Restaurants</a></li>
+      <li><a href="cart.html" class="hover:underline">Cart</a></li>
+      <li><a href="track.html" class="hover:underline">Track Order</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-yellow-100 p-6 text-center">
+    <h2 class="text-3xl font-bold">Browse Restaurants</h2>
+    <p class="text-lg mt-2">Find your favorite meals nearby!</p>
+  </header>
+
+  <!-- Filter/Search -->
+  <div class="p-4 flex flex-col sm:flex-row justify-between items-center">
+    <input
+      type="text"
+      placeholder="Search by name or cuisine..."
+      class="border p-2 rounded w-full sm:w-1/2 mb-4 sm:mb-0"
+    />
+    <select class="border p-2 rounded ml-0 sm:ml-4">
+      <option value="">Filter by Cuisine</option>
+      <option value="pizza">Pizza</option>
+      <option value="burger">Burger</option>
+      <option value="biryani">Biryani</option>
+      <option value="desserts">Desserts</option>
+    </select>
+  </div>
+
+  <!-- Restaurant Cards -->
+  <main class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-4">
+    <div class="bg-white rounded shadow hover:shadow-lg overflow-hidden">
+      <img src="https://source.unsplash.com/400x200/?pizza,restaurant" class="w-full h-40 object-cover" />
+      <div class="p-4">
+        <h3 class="font-semibold text-xl">Pizza Palace</h3>
+        <p class="text-gray-600 text-sm mb-2">Italian • 30 mins • ★ 4.5</p>
+        <a href="menu.html" class="text-red-500 font-medium hover:underline">View Menu</a>
+      </div>
+    </div>
+    <div class="bg-white rounded shadow hover:shadow-lg overflow-hidden">
+      <img src="https://source.unsplash.com/400x200/?burger,restaurant" class="w-full h-40 object-cover" />
+      <div class="p-4">
+        <h3 class="font-semibold text-xl">Burger Hub</h3>
+        <p class="text-gray-600 text-sm mb-2">American • 25 mins • ★ 4.3</p>
+        <a href="menu.html" class="text-red-500 font-medium hover:underline">View Menu</a>
+      </div>
+    </div>
+    <div class="bg-white rounded shadow hover:shadow-lg overflow-hidden">
+      <img src="https://source.unsplash.com/400x200/?biryani,restaurant" class="w-full h-40 object-cover" />
+      <div class="p-4">
+        <h3 class="font-semibold text-xl">Biryani Express</h3>
+        <p class="text-gray-600 text-sm mb-2">Indian • 35 mins • ★ 4.7</p>
+        <a href="menu.html" class="text-red-500 font-medium hover:underline">View Menu</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center p-4 mt-10">
+    &copy; 2025 FoodieExpress. All rights reserved.
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
